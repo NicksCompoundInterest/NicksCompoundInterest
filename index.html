@@ -10,12 +10,14 @@
   <div class="container">
     <h1>Compound Interest Calculator</h1>
     <div class="form">
-      <label for="principal">Principal Amount ($):</label>
-      <input type="number" id="principal" placeholder="Enter principal amount">
+      <label for="principal">Initial Principal Amount ($):</label>
+      <input type="number" id="principal" placeholder="Enter initial principal amount">
       <label for="rate">Annual Interest Rate (%):</label>
       <input type="number" id="rate" step="0.01" placeholder="Enter annual interest rate">
       <label for="years">Number of Years:</label>
       <input type="number" id="years" placeholder="Enter number of years">
+      <label for="contribution">Monthly Contribution ($):</label>
+      <input type="number" id="contribution" placeholder="Enter monthly contribution">
       <button onclick="calculate()">Calculate</button>
     </div>
     <div id="result" class="result"></div>
