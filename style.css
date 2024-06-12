@@ -38,16 +38,17 @@ input {
 
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 12px; /* Increased padding for a larger button */
+  background-color: #ff4d4d; /* Red background color */
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px; /* Rounder border */
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff3333; /* Darker red on hover */
 }
 
 .result {
