@@ -13,9 +13,9 @@ function calculate() {
 
   document.getElementById('result').innerHTML = 'After ' + years + ' years, your investment will be worth $' + compoundInterest[years - 1].toFixed(2) + ', with total interest earned of $' + totalInterest[years - 1].toFixed(2) + '.';
 
-  // Chart
-  var ctx = document.getElementById('chartContainer').getContext('2d');
-  var chart = new Chart(ctx, {
+  // Update chart data
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
     type: 'line',
     data: {
       labels: Array.from({ length: years }, (_, i) => i + 1),
@@ -47,3 +47,4 @@ function calculate() {
     }
   });
 }
+
